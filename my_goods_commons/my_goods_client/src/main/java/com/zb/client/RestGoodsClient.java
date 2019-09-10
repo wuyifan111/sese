@@ -22,7 +22,7 @@ public Goods getGoodsById(@RequestParam("id") Long id)throws Exception;
 public List<Goods>	getGoodsListByMap(@RequestParam Map<String,Object> param)throws Exception;
 
 @RequestMapping(value = "/getGoodsCountByMap",method = RequestMethod.POST)
-public Integer getGoodsCountByMap(@RequestParam Map<String,Object> param)throws Exception;
+    public Integer getGoodsCountByMap(@RequestParam Map<String,Object> param)throws Exception;
 
 @RequestMapping(value = "/qdtxAddGoods",method = RequestMethod.POST)
 public Integer qdtxAddGoods(@RequestBody Goods goods)throws Exception;
